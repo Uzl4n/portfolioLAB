@@ -1,0 +1,292 @@
+  <html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="icon" href="../components/img/icon.jpg" type="image/png">
+
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+        <script src="../js/firebaseInit.js"></script>
+        <script src="../js/indexbr.js"></script>
+        <script src="../js/auth-guard.js"></script>
+        <script src="../js/buttons.js"></script>
+        
+
+
+       <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <link rel="stylesheet" href="./css/style.css">
+            <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+            <link rel="stylesheet" type=" text/css" href="../css/main.css">
+        <link rel="stylesheet" type=" text/css" href="../css/description.css"> 
+
+
+        <link rel="stylesheet" type=" text/css" href="../css/indexbr.css">
+      
+      -->
+
+      <link rel="stylesheet" href="../css/swiper.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <link rel="stylesheet" href="css/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      
+     
+        
+        <title>Luan Antunes Barbosa</title>
+            
+    </head>
+
+
+    <body>
+            
+
+
+                
+
+
+                 <main class="apresentacao">
+                  <div class="center">
+                      <header class="header">
+                        <div id = "head">   
+                          <h1>Luan Antunes Barbosa</h1>
+                          <button onclick="index()">US</button>
+                          <button onclick="qA()">QA</button>
+                          <button onclick="front()">Front</button>
+                          <button onclick="gameButton()">Game</button>
+                          <button type="button" class="clear" onclick="logout()">Sair</button>
+          
+                                
+                          </div>    
+                      </header>
+                    <div class="">
+                      <a href="#" id="menu-mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </a>
+                    </div>
+                   
+                    <div class="clear"></div>
+                    <section class="apresentacao__box">
+                      <div class="apresentacao__descricao">
+                        
+                            <pre>🇧🇷</pre>
+                            <p>Formado em Análise e Desenvolvimento de Sistemas pelo IFSUL - Instituto Federal Sul-rio-grandense (2021) Desenvolvimento De Games - Danki Code (2023)<br/></p>
+                           
+                            <br/><br/><br/>
+                            <p>Temas e ferramentas que fazem parte da minha rotina de trabalho;</p>
+                                
+                            <p>  * Análise de documentações de arquitetura e padrões de projetos</p>
+                            <p>  * Clean Code</p>
+                            <p>  * Clean Architecture</p>
+                            <p>  * SOLID</p>
+                            <p>  * Git, GitHub, Firebase, SQL, NoSQL</p>
+                            <p>  * Componentização e responsividade</p>
+                            <p>  * Unity, Godot, GameMaker Studio, The Eclipse IDE, Unreal Engine, Construct.</p>
+        
+                            <br/><br/><br/>
+        
+                            <p>Atualmente me encontro no nível de Inglês intermediário, mas em transição para o avançado, no qual consigo ler, escrever e manter uma comunicação.</p>
+                          
+                      </div>    
+                      <div class="clear"></div>
+                    </section>
+
+
+                    <section class="post">
+                      <div class="center">
+                        <h2 class="title">Habilidades</h2>
+                        <h5 class="subtitle">Algumas habilidades sobre mim.</h5>
+                        <div class="posts">
+                          <div class="swiper-container-posts swiper-container">
+                            <div class="swiper-wrapper" id="posts-slider">
+                              
+  
+                              <section class="section-top-margin">
+                                <div class="center">
+                                <header class="p-15">
+                                </header>
+                                <div class="posts" id="posts">
+                                </div>
+                                </div>
+                                <div class="pagination" id="pagination">
+                
+                                </div>
+                            </section>
+              
+              
+                            </div>
+                          </div>
+                          <div class="swiper-pagination swiper-pagination-posts"></div>
+                        </div>
+                      </div>
+                    </section>  
+
+
+
+            
+                    <section class="icones">
+                      <div class="box-wrapper">
+                        <div class="box-icone">
+                          <img src="../components/img/icone-1.png" alt="">
+                        </div>
+                        <h6 class="box-icone__titulo">Trabalho</h6>
+                        <p class="box-icone__texto">Estar pronto para aprender <br>todos os dias!</p>
+                      </div>
+                      <div class="box-wrapper">
+                        <div class="box-icone box-icone--red">
+                          <img src="../components/img/icone-2.png" alt="">
+                        </div>
+                        <h6 class="box-icone__titulo">Disposição</h6>
+                        <p class="box-icone__texto">Evoulir meus conhecimentos e <br>ganhar experiencia!</p>
+                      </div>
+                      <div class="box-wrapper">
+                        <div class="box-icone">
+                          <img src="../components/img/icone-3.png" alt="">
+                        </div>
+                        <h6 class="box-icone__titulo">Trabalho em equipe</h6>
+                        <p class="box-icone__texto">O individual é importante <br>mas saber escutar sua equipe é primordial!</p>
+                      </div>
+                      <div class="box-wrapper">
+                        <div class="box-icone">
+                          <img src="../components/img/icone-4.png" alt="">
+                        </div>
+                        <h6 class="box-icone__titulo">Eu</h6>
+                        <p class="box-icone__texto">Sempre a procura de fazer o melhor<br>posso não saber todas as respostas mas<br>não me limito! </p>
+                      </div>
+                      <div class="clear"></div>
+                    </section>
+                  </div>
+
+                  
+            
+                  <section class="post">
+                    <div class="center">
+                      <h2 class="title">Our Recent Post</h2>
+                      <h5 class="subtitle">Vampires The Romantic Ideology Behind Them</h5>
+                      <div class="posts">
+                        <div class="slideshow-container ">
+                          <div class="swiper-wrapper" id="posts-sliders">
+            
+            
+                          </div>
+
+                          <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                          </div>
+                          
+                        </div>
+
+                       
+                      
+                        <div class="swiper-pagination swiper-pagination-posts"></div>
+                      </div>
+                    </div>
+            
+                  <section class="testimonial">
+                    
+            
+                  </section>
+            
+                  <section class="our-story">
+                  
+                  </section>
+            
+                 
+            
+                 
+                  
+
+            
+            
+                
+            
+                 
+        
+                     
+                 <footer class="footer">
+                  <div class="social">
+                      
+                          <a href="https://github.com/Uzl4n"> <img src = "../components/img/GitHub.png"/></a>
+                          <a href="https://www.linkedin.com/in/luan-antunes-barbosa-a228b9214/"><img src = "../components/img/linked.png"/></a>
+                          <a href="https://zl4n.itch.io/"><img src = "../components/img/itch.io.png"/></a> 
+  
+                          <p>&copy; 2024 - Todos os direitos reservados</p>
+                          <p>Entre em contato pelo e-mail: hastaluego6236@gmail.com</p>  
+  
+                      </div>
+              </footer> 
+              
+            </main>
+</body>
+
+</html>
+
+
+
+<!-- 
+    
+- botao QA, FRONT E GAME
+- DESCRICAO
+- EXEMPLOS
+- CONTATOS
+- QA como final teste unitário/Android Studio Front, crud API testes, clone de sites!
+- framework como o React ou o Vue
+-FUTURAS IDEIAS
+
+
+
+
+            <img src = "./img/head.png"/>
+            <div class="crud">
+              <div class="container">
+                <div class="header">
+                  <span>Cadastro de Funcionários</span>
+                  <button onclick="openModal()" id="new">Incluir</i></button>
+                </div>
+            
+                <div class="divTable">
+                  <table> 
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Salário</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+            
+                <div class="modal-container">
+                  <div class="modal">
+                    <form>
+                      <label for="m-nome">Nome</label>
+                      <input id="m-nome" type="text" required />
+              
+                      <label for="m-funcao">Função</label>
+                      <input id="m-funcao" type="text" required />
+              
+                      <label for="m-salario">Salário</label>
+                      <input id="m-salario" type="number" required />
+                      <button id="btnSalvar">Salvar</button>
+                    </form>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+              <script src="./js/script.js"></script>
+
+
+-->

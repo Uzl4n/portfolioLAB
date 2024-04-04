@@ -1,0 +1,91 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="../js/register.js"></script>
+        <script src="../js/validations.js"></script>
+
+       
+        <script src="../js/loading.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+        <script src="../js/firebaseInit.js"></script>
+
+
+        <link rel="stylesheet" type=" text/css" href="../css/description.css">
+        <link rel="stylesheet" type=" text/css" href="../css/register.css">
+        <link rel="stylesheet" type=" text/css" href="../css/fonts.css">
+
+        <link rel="icon" href="../components/img/icon.jpg" type="image/png">
+
+        <title>Luan Antunes Barbosa</title>
+            
+    </head>
+
+    <body class="centralize">
+
+            <header class="header">
+                    <h1>Luan A. Barbosa</h1>
+            </header>      
+        
+            <div id="login0">
+
+                <article>              
+                    <img src="../components/img/Bg-R.jpg" width="260" height="205" id="backgroundR"> 
+                </article>
+
+                <form>
+                    <div id="login00"> 
+                        
+                        <div class="form-field">  
+                            <div><label>Email</label></div>
+                            <input type="email" placeholder="seu@email.com" onchange="onChangeEmail()" id="email"/>
+                            <div class="error" id="emailError">Email é obrigatório</div>
+                            <div class="error" id="emailInvalid">Email é inválido</div>
+                        </div>
+
+                        <div class="form-field">
+                            <div><label>Senha</label></div>
+                            <input  type="password" placeholder="Senha" id="password" onchange="onChangePassword()"/>
+                            <div class="error" id="passwordError">Senha é obrigatória</div>
+                            <div class="error" id="passwordErrorMinLength">Senha deve ter pelo menos 6 caracters</div>
+                        </div>
+
+                        <div class="form-field">
+                            <div><label>Confirmar Senha</label></div>
+                            <input  type="password" placeholder="Confirmar senha" id="confirmPassword" onchange="onChangeConfirmPassword()"/>
+                            <div class="error" id="passwordErrorDoesntMatch">Senha e Confirmar senha devem ser iguais!</div>
+
+                        </div>
+
+                        <div class="error" id="emailError">Email é obrigatório</div>
+                        <div class="error" id="emailInvalid">Email é inválido</div>
+                        <div class="error" id="passwordError">Senha é obrigatória</div>
+                    </div>
+                            <div>
+                                <button type="button" class="solid" disabled="true" onclick="register()" id="registerButton">Registrar</button>
+                            </div>
+
+                            <div>
+                                <button type="button" class="clear">Login</button>
+                            </div>
+                </form>
+            </div>    
+            
+               
+            <footer class="rodape">
+                <div class="social">
+                    
+                        <a href="https://github.com/Uzl4n"> <img src = "../components/img/GitHub.png"/></a>
+                        <a href="https://www.linkedin.com/in/luan-antunes-barbosa-a228b9214/"><img src = "../components/img/linked.png"/></a>
+                        <a href="https://zl4n.itch.io/"><img src = "../components/img/itch.io.png"/></a> 
+
+                        <p>&copy; 2024 - Todos os direitos reservados</p>
+                        <p>Entre em contato pelo e-mail: hastaluego6236@gmail.com</p>  
+
+                </div>
+            </footer>                       
+    </body>
+</html>

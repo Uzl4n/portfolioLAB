@@ -1,0 +1,251 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="icon" href="../components/img/icon.jpg" type="image/png">
+
+        <script src="../js/login.js"></script>
+        <script src="../js/validations.js"></script>
+        <script src="../js/loading.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+        <script src="../js/auth-guard.js"></script>
+        <script src="../js/buttons.js"></script>
+
+              <script>
+                    const firebaseConfig = {
+                          apiKey: "AIzaSyBpcFNhRrywjv3U4l_kMa06sP5RbRrglik",
+                          authDomain: "portfolio-luan-antunes-barbosa.firebaseapp.com",
+                          projectId: "portfolio-luan-antunes-barbosa",
+                          storageBucket: "portfolio-luan-antunes-barbosa.appspot.com",
+                          messagingSenderId: "728032143588",
+                          appId: "1:728032143588:web:de32c6daf10651b220a4f1",
+                          measurementId: "G-XBNH28R588"
+                      };
+                      firebase.initializeApp(firebaseConfig);
+                      
+              </script>
+
+        <link rel="stylesheet" href="../css/swiper.min.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsivo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+
+        <title>Luan Antunes Barbosa</title>
+            
+    </head>
+
+    <body>
+        <main class="apresentacao">
+         <div class="center">
+             <header class="header">
+               <div id = "head">   
+
+                  <h1>Luan Antunes Barbosa</h1>
+                  <button onclick="indexBR()">BR</button>
+                  <button onclick="qA()">QA</button>
+                  <button onclick="front()">Front</button>
+                  <button onclick="gameButton()">Game</button>
+                  <button type="button" class="clear" onclick="logout()">Sair</button>
+
+                </div>    
+             </header>
+          
+           <div class="clear"></div>
+            <section class="apresentacao__box">
+              <div class="apresentacao__descricao">
+                
+                <pre>🇺🇸</pre>
+                <p>Graduated in Systems Analysis and Development from IFSUL - Instituto Federal Sul-rio-grandense (2021) Game Development - Danki Code (2023)<br/></p> 
+                
+                 
+                <br/><br/><br/>
+                <p>Themes and tools that are part of my work routine;</p>
+                <p>   * Analysis of architecture documentation and design standards</p>
+                <p>   * CleanCode</p>
+                <p>   * CleanArchitecture</p>
+                <p>   * SOLID</p>
+                <p>   * Git, GitHub, Firebase, SQL, NoSQL</p>
+                <p>   * Componentization and responsiveness</p>
+                <p>   * Unity, Godot, GameMaker Studio, The Eclipse IDE, Unreal Engine, Construct.</p>
+                
+                <br/><br/><br/>
+
+                <p>I am currently at an intermediate level of English, but transitioning to advanced, where I can read, write and maintain communication.</p>
+
+                 
+             </div>    
+
+                  <div class="clear"></div>
+
+            </section>
+
+            <section class="post">
+              <div class="center">
+                <h2 class="title">Professional Profile</h2>
+                <h5 class="subtitle">Some individualities about me.</h5>
+                <section class="icones">
+                  <div class="box-wrapper">
+                    <div class="box-icone">
+                      <img src="../components/img/icone-1.png" alt="">
+                    </div>
+                    <h6 class="box-icone__titulo">Work</h6>
+                    <p class="box-icone__texto">Be ready to learn <br>every day!</p>
+                  </div>
+                  <div class="box-wrapper">
+                    <div class="box-icone box-icone--red">
+                      <img src="../components/img/icone-2.png" alt="">
+                    </div>
+                    <h6 class="box-icone__titulo">Disposition</h6>
+                    <p class="box-icone__texto">Develop my knowledge <br>and gain experience!</p>
+                  </div>
+                  <div class="box-wrapper">
+                    <div class="box-icone">
+                      <img src="../components/img/icone-3.png" alt="">
+                    </div>
+                    <h6 class="box-icone__titulo">Team work</h6>
+                    <p class="box-icone__texto">The individual is important <br>but knowing how to listen to<br> your team is essential!</p>
+                  </div>
+                  <div class="box-wrapper">
+                    <div class="box-icone">
+                      <img src="../components/img/icone-4.png" alt="">
+                    </div>
+                    <h6 class="box-icone__titulo">Myself</h6>
+                    <p class="box-icone__texto">Always looking to do <br>the bestI may not know all<br> the answers but I don't limit myself! </p>
+                  </div>
+                  <div class="clear"></div>
+                </section>
+                
+              </div>
+            </section>
+
+            <section class="post2">
+              <div class="center">
+                <div class="postS">
+                  <h2 class="title">Skills</h2>
+                  <h5 class="subtitle">Some skills about me.</h5>
+                  <div class="swiper-container-posts swiper-container">
+                    <div class="swiper-wrapper" id="posts-slider">
+                      
+
+                      <section class="section-top-margin">
+                        <div class="center">
+                        <header class="p-15">
+                        </header>
+                        <div class="posts" id="posts">
+                        </div>
+                        </div>
+                        <div class="pagination" id="pagination">
+                        </div>
+                    </section> 
+
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-posts"></div>
+                </div>
+              </div>
+            </section>  
+          </div>
+
+   <script type="text/javascript" src="../js/menu.js"></script>
+   <script type="text/javascript" src="../js/posts.js"></script>
+   <script type="text/javascript" src="../js/getUrlVars.js"></script>
+   <script type="text/javascript">
+       //  ------------------------------------------
+       //  paginação
+       function pagination (page, total, limit) {
+       var pageSize = Math.ceil(total/limit);
+
+       var _pagination = {
+           page: page,
+           total: total,
+           limit: limit,
+           pages: pageSize
+           };
+
+       if(page > 1){
+           var prev = page-1;
+           _pagination.previous = prev;
+       }
+
+       var remaining = total - (page * limit);
+
+       if(remaining > 0){
+           _pagination.next = page+1;
+       }
+
+       return _pagination;
+       }
+
+       var array = posts;
+       var pageQuery = getUrlVars()["pagina"];
+
+       var page = parseInt(pageQuery) || 1;
+       var limit = 3;
+       var offset = (page - 1) * limit;
+       var total = array.length;
+       var items = array.slice(offset, offset+limit);
+       var paginationResult = pagination(page, total, limit);
+       // console.log(items);
+       // console.log(pagination(page, total, limit));
+
+       //-------------
+       var postsHtml = '';
+       for (var i = 0; i < items.length; i++) {
+       var post = items[i];
+       var html = '<div class="col col--3 mb-40 col--small-2 col--mobile-1">'+
+           '<div class="post-box">'+
+           '<div class="post__wrapper">'+
+               '<a href="news-detail.html?id='+(i+1)+'" class="post__link">'+
+               '<div class="post__imagem">'+
+                   '<img src="'+post.imagem+'" alt="" class="img-responsiva">'+
+               '</div>'+
+               '<div class="post__content">'+
+                   '<span class="post__title" id="titulo">'+post.titulo+'</span>'+
+                   '<p class="post__subtitle">By <strong id="autor">'+post.autor+'</strong> |  '+post.data+'</p>'+
+               '</div>'+
+               '</a>'+
+           '</div>'+
+           '</div>'+
+       '</div>';
+       postsHtml += html;
+       }
+
+       postsHtml += '<div class="clear"></div>';
+
+       document.getElementById("posts").innerHTML = postsHtml;
+
+       if (pageQuery > paginationResult.pages) {
+       document.getElementById("posts").innerHTML = "Nenhum item encontrado";
+       }
+
+       //----------
+       var paginationItems = '';
+       for (var i = 0; i < paginationResult.pages; i++) {
+       var paginaAtiva = i+1;
+       var ativo = page === paginaAtiva ? 'ativo' : '';
+       paginationItems += '<a class="pagination__link '+ativo+'" href="news.html?pagina='+paginaAtiva+'">'+paginaAtiva+'</a>';
+       }
+       document.getElementById('pagination').innerHTML = paginationItems;
+
+    </script>
+   
+        <footer class="footer">
+            <div class="social">
+                
+                    <a href="https://github.com/Uzl4n"> <img src = "../components/img/GitHub.png"/></a>
+                    <a href="https://www.linkedin.com/in/luan-antunes-barbosa-a228b9214/"><img src = "../components/img/linked.png"/></a>
+                    <a href="https://zl4n.itch.io/"><img src = "../components/img/itch.io.png"/></a> 
+
+                    <p>&copy; 2024 - Todos os direitos reservados</p>
+                    <p>Entre em contato pelo e-mail: hastaluego6236@gmail.com</p>  
+
+            </div>
+        </footer>  
+     </main>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="icon" href="../components/img/icon.jpg" type="image/png">
+
+        <script src="../js/login.js"></script>
+        <script src="../js/buttons.js"></script>
+        <script src="../js/validations.js"></script>
+        <script src="../js/loading.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+        <script src="../js/auth-guard.js"></script>
+
+
+
+        <script>
+              const firebaseConfig = {
+                    apiKey: "AIzaSyBpcFNhRrywjv3U4l_kMa06sP5RbRrglik",
+                    authDomain: "portfolio-luan-antunes-barbosa.firebaseapp.com",
+                    projectId: "portfolio-luan-antunes-barbosa",
+                    storageBucket: "portfolio-luan-antunes-barbosa.appspot.com",
+                    messagingSenderId: "728032143588",
+                    appId: "1:728032143588:web:de32c6daf10651b220a4f1",
+                    measurementId: "G-XBNH28R588"
+                };
+                firebase.initializeApp(firebaseConfig);
+                
+        </script>
+
+       
+        <link rel="stylesheet" href="../css/swiper.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+
+        
+
+        <title>Luan Antunes Barbosa</title>
+            
+    </head>
+
+   
+
+    <body>
+        <main class="apresentacao">
+            <div class="center">
+            <header class="header">
+                <div id = "head">  
+                 <h1>Luan Antunes Barbosa</h1>
+                 <button onclick="indexBR()">BR</button>
+                 <button onclick="qaBR()">QA</button>
+                 <button onclick="frontBR()">Front</button>
+                 <button onclick="gameButton()">Game</button>
+                 <button type="button" class="clear" onclick="logout()">Sair</button>
+                      
+                </div>    
+            </header>   
+
+
+
+            <section class="section-top-margin">
+                <div class="center">
+                  <!-- <header class="p-15">
+                    <h2 class="title align-left">Our Recent Post</h2>
+                    <h5 class="subtitle align-left">Vampires The Romantic Ideology Behind Them</h5>
+                  </header> -->
+                  <div class="post-detail">
+                    <div class="post-detail__img-box">
+                      <img id="imagem" src="" alt="" class="img-responsiva">
+                    </div>
+                    <div class="post__box">
+                      <h2 class="post__title" id="titulo"></h2>
+                      <p class="post__subtitle">By <strong id="autor"></strong> |  <span id="data"></span></p>
+                      <br>
+                      <div class="post__text">
+                        <p class="mb-40" id="texto"></p>
+                      </div>
+                      <div class="post__video" id="box-video">
+        
+                      </div>
+                      <div class="post__text">
+                        <p class="mb-40" id="texto2"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+            
+            <section class="post">
+                <div class="center">
+                  <h2 class="title" >Skills</h2>
+                  <h5 class="subtitle">Some skills about me.</h5>
+                  <div class="posts">
+                    <div class="swiper-container-posts swiper-container">
+                      <div class="swiper-wrapper" id="posts-slider">
+                        
+  
+                        <section class="section-top-margin">
+                          <div class="center">
+                          <header class="p-15">
+                          </header>
+                          <div class="posts" id="posts">
+                          </div>
+                          </div>
+                          <div class="pagination" id="pagination">
+                          </div>
+                      </section> 
+  
+                      </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-posts"></div>
+                  </div>
+                </div>
+              </section>  
+            </div>
+            
+            <script type="text/javascript" src="../js/menu.js"></script>
+            <script type="text/javascript" src="../js/posts.js"></script>
+            <script type="text/javascript" src="../js/getUrlVars.js"></script>
+            <script type="text/javascript">
+                console.log(posts);
+              var id = getUrlVars()["id"];
+              id = id - 1;
+          
+              var post = posts[id];
+          
+              document.getElementById('titulo').innerHTML = post.titulo;
+              document.getElementById('autor').innerHTML = post.autor;
+              document.getElementById('data').innerHTML = post.data;
+              document.getElementById('imagem').src = post.imagem_post;
+              document.getElementById('texto').innerHTML = post.texto;
+              document.getElementById('texto2').innerHTML = post.texto2;
+          
+          
+              if (post.video) {
+                var videoHTML = '<iframe id="video" width="560" height="315" src="'+post.video+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                document.getElementById('box-video').innerHTML = videoHTML;
+              }        
+       
+
+   </script>
+               
+            <footer class="footer">
+                <div class="social">
+                    
+                        <a href="https://github.com/Uzl4n"> <img src = "../components/img/GitHub.png"/></a>
+                        <a href="https://www.linkedin.com/in/luan-antunes-barbosa-a228b9214/"><img src = "../components/img/linked.png"/></a>
+                        <a href="https://zl4n.itch.io/"><img src = "../components/img/itch.io.png"/></a> 
+       
+                        <p>&copy; 2024 - Todos os direitos reservados</p>
+                        <p>Entre em contato pelo e-mail: hastaluego6236@gmail.com</p>  
+       
+                    </div>
+            </footer>   
+        </main>             
+</body>
+
+
+
+</html>
+
+
+
+<!-- 
+    
+- botao QA, FRONT E GAME
+
+- EXEMPLOS
+cadastro, informativo com atualizacao, jogo
+
+-FUTURAS IDEIAS
+
+-->

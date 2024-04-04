@@ -1,0 +1,76 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="../js/login.js"></script>
+        <script src="../js/validations.js"></script>
+        <script src="../js/loading.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth-compat.js"></script>
+        <script src="../js/firebaseInit.js"></script>
+
+        <link rel="stylesheet" type=" text/css" href="../css/description.css">
+        <link rel="stylesheet" type=" text/css" href="../css/login.css">
+        <link rel="stylesheet" type=" text/css" href="../css/fonts.css">
+
+        <link rel="icon" href="../components/img/icon.jpg" type="image/png">
+
+        <title>Luan Antunes Barbosa</title>
+            
+    </head>
+
+   
+
+         <body class="centralize">
+        
+            <header class="header">
+                  <h1>Luan A. Barbosa</h1>
+            </header> 
+
+           <section>
+
+                 <div id="login0">
+
+                        <form>
+                                <div id="login00">   
+                                    <label>Email</label>
+                                    <input type="email" name="email"  id="email" onchange="onChangedLogin()" placeholder="seu@email.com"/>
+                                    
+                                    <label>Senha</label>
+                                    <input  type="password" name="password" id="password" onchange="onChangedPassword()" placeholder="Senha"/>
+                                    
+                                    <div class="error" id="emailError">Email é obrigatório</div>
+                                    <div class="error" id="emailInvalid">Email é inválido</div>
+                                    <div class="error" id="passwordError">Senha é obrigatória</div>
+                                </div>
+                                        <button type="button" class="clear" id="passwordRecover" disabled="true" onclick="recoverPassword()">Recuperar senha</button>
+                                        <button type="button" class="solid" id="loginButton" disabled="true" onclick="login()">Entrar</button>
+                                        <button type="button" class="outline" onclick="register()">Registrar</button>
+                        </form>
+
+                        <article>              
+                            <img src="../components/img/Bg-L.jpg" id="backgroundL"> 
+                        </article>
+                </div>   
+                                        
+            </section>
+               
+            <footer class="rodape">
+                
+                    <div class="social">
+                    
+                   
+                    
+                        <a href="https://github.com/Uzl4n"> <img src = "../components/img/GitHub.png"/></a>
+                        <a href="https://www.linkedin.com/in/luan-antunes-barbosa-a228b9214/"><img src = "../components/img/linked.png"/></a>
+                        <a href="https://zl4n.itch.io/"><img src = "../components/img/itch.io.png"/></a> 
+
+                        <p>&copy; 2024 - Todos os direitos reservados</p>
+                        <p>Entre em contato pelo e-mail: hastaluego6236@gmail.com</p>
+
+                    </div>
+            </footer>   
+        </body>
+</html>

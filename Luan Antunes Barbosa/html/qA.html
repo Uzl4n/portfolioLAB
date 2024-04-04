@@ -1,0 +1,111 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="../components/img/icon.jpg"/>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+       <!--<link rel="stylesheet" href="../css/style.css"> -->
+        <link rel="stylesheet" href="../css/qa.css">
+
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <script src="../js/auth-guard.js"></script>
+        <script src="../js/buttons.js"></script>
+
+        <script>
+          const firebaseConfig = {
+                apiKey: "AIzaSyBpcFNhRrywjv3U4l_kMa06sP5RbRrglik",
+                authDomain: "portfolio-luan-antunes-barbosa.firebaseapp.com",
+                projectId: "portfolio-luan-antunes-barbosa",
+                storageBucket: "portfolio-luan-antunes-barbosa.appspot.com",
+                messagingSenderId: "728032143588",
+                appId: "1:728032143588:web:de32c6daf10651b220a4f1",
+                measurementId: "G-XBNH28R588"
+            };
+            firebase.initializeApp(firebaseConfig);
+            
+    </script>
+
+        <title>Luan Antunes Barbosa</title>
+            
+    </head>
+
+    <body>
+      <main class="apresentacao">
+        <div class="center">
+            <header class="header">
+              <div id = "head">  
+              <h1>Luan Antunes Barbosa</h1>
+              <button onclick="indexBR()">BR</button>
+              <button onclick="qa()">QA</button>
+              <button onclick="front()">Front</button>
+              <button onclick="gameButton()">Game</button>
+              <button type="button" class="clear" onclick="logout()">Sair</button>
+                    
+              </div>    
+          </header>    
+            
+            
+          <section class="about"> 
+            <div class="crud">
+              <div class="container">
+                <div class="headerSec">
+                  <span>Cadastro de Funcionários</span>
+                  <button onclick="openModal()" id="new">Incluir</i></button>
+                </div>
+            
+                <div class="divTable">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Salário</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
+            
+                <div class="modal-container">
+                  <div class="modal">
+                    <form>
+                      <label for="m-nome">Nome</label>
+                      <input id="m-nome" type="text" required />
+              
+                      <label for="m-funcao">Função</label>
+                      <input id="m-funcao" type="text" required />
+              
+                      <label for="m-salario">Salário</label>
+                      <input id="m-salario" type="number" required />
+                      <button id="btnSalvar">Salvar</button>
+                    </form>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+              <script src="../js/script.js"></script>
+            </section>
+            </div>   
+                  <footer class="footer">
+                        <div class="social">
+                        
+                            <a href="https://github.com/Uzl4n"> <img src = "../components/img/GitHub.png"/></a>
+                            <a href="https://www.linkedin.com/in/luan-antunes-barbosa-a228b9214/"><img src = "../components/img/linked.png"/></a>
+                            <a href="https://zl4n.itch.io/"><img src = "../components/img/itch.io.png"/></a> 
+          
+                            <p>&copy; 2024 - Todos os direitos reservados</p>
+                            <p>Entre em contato pelo e-mail: hastaluego6236@gmail.com</p>  
+          
+                        </div>
+                </footer>  
+          </main>             
+    </body>
+</html>
